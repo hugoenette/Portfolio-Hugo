@@ -1,0 +1,264 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+/* Style de base pour la sidebar */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    border-right: 1px solid #10aeec;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    writing-mode: vertical-lr; /* Écriture verticale de droite à gauche */
+    text-orientation: mixed; /* Permettre aux caractères de s'orienter correctement */
+}
+
+.sidebar a:hover {
+    color: #ddd;
+    background-color: #10aeec;
+}
+
+/* Style de base pour la page */
+body {
+    font-family: "Bebas Neue";
+    font-size: 20px;
+    text-align: center ;
+    margin-left: 110px;
+    padding: 0;
+    color: #ffffff;
+}
+
+header {
+    background-color: #202020;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #10aeec;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    padding: 20px;
+    margin: auto ;
+}
+
+footer {
+    background-color: #202020;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-top: 1px solid #10aeec;
+}
+
+/* Style de base pour la page */
+body {
+    background-color: black;
+}
+
+/* LOGO SKILLS */
+#skills {
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #10aeec;
+    text-align: center;
+}
+
+.skill img {
+    width: 60px; /* Ajustez la taille selon vos besoins */
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+/* FIN  LOGO SKILLS */
+
+/* test Titre Défilant */
+.textanim{
+    animation: textanim 3s ease 0s 1 normal forwards;
+ }
+
+
+@keyframes textanim {
+	0% {
+		transform: scale(2);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+/* test Titre Défilant */
+
+#download-cv {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.download-button {
+    font-family:"Bebas Neue";
+    background-color: #10aeec;
+    color: white;
+    padding: 30px 40px;
+    border: none;
+    border-radius: 200px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.download-button:hover {
+    background-color: #10aeec;
+}
+#education {
+    padding: 20px;
+}
+
+.education-item {
+    margin-bottom: 20px;
+    border: 1px solid #10aeec;
+    padding: 15px;
+}
+
+.education-item h3 {
+    margin-top: 0;
+}
+
+.education-item h4 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.education-item p {
+    margin-top: 5px;
+}
+
+.education-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.education-item li {
+    margin-bottom: 5px;
+}
+#about-training {
+    padding: 20px;
+    text-align: justify; /* Ajuste l'alignement du texte */
+}
+
+#about-training h2 {
+    margin-top: 0;
+}
+
+#about-training p {
+    margin-top: 10px;
+    line-height: 1.5; /* Augmente l'espacement entre les lignes */
+}
+
+#about-training ul {
+    list-style:thumbs; /* Style des puces */
+    margin-left: 20px;
+}
+
+#about-training li {
+    margin-bottom: 5px;
+}
+@counter-style thumbs {
+    system: cyclic;
+    symbols: "\1F44D";
+    suffix: " ";
+}  
+
+/*logo*/
+ /*.logo {
+    grid-column: 1;
+    max-width: 200px;
+    height: auto;
+    margin-left: 50px;
+}
+*/
+/*fin logo*/
+
+/* Formulaire de contact*/
+/* Basic styling for the form */
+#contact-form {
+    width: 500px; /* Adjust as needed */
+    margin: 0 auto; /* Center the form */
+    padding: 20px;
+    border: 1px solid #10aeec;
+    border-radius: 5px;
+}
+
+/* Styling for form groups */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Styling for labels */
+label {
+    display: block; /* Make labels block-level */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Styling for input fields */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #10aeec;
+    border-radius: 3px;
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+/* Styling for submit button */
+button[type="submit"] {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Hover effect for submit button */
+button[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="./index.html">Accueil</a></li>
+            <li><a href="./présentation.html">Présentaion de la formation</a></li>
+            <li><a href="#">Projets</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <header>
+        <h1>Contact</h1>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h2>Infos</h2>
+            <p>N'hésitez pas à me contacter en utilisant les méthodes suivantes :</p>
+            <ul>
+                <li>Email: <a href="hugo.enette@laposte.net">hugo.enette@laposte.net</a></li>
+                <li>Téléphone: 06.95.87.67.58</li>
+            </ul>
+        </section>
+
+        <section class="contact-form">
+            <h2>Formulaire de contact</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nom:</label>
+                    <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Entrez votre mail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Entrez votre message" required></textarea>
+                </div>
+
+                <button type="submit">Envoyez le message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Portfolio ENETTE HUGO</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
