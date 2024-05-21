@@ -35,13 +35,16 @@ body {
     text-decoration: none;
     display: block;
     padding: 10px;
-    writing-mode: vertical-lr; /* Écriture verticale de droite à gauche */
+    writing-mode: vertical-rl; /* Écriture verticale de droite à gauche */
     text-orientation: mixed; /* Permettre aux caractères de s'orienter correctement */
+    transition: 0,30s ease-in-out;
+    rotate: 180deg;
 }
 
 .sidebar a:hover {
     color: #ddd;
     background-color: #10aeec;
+    transform: scale(1.2) ;
 }
 
 /* Style de base pour la page */
@@ -73,7 +76,7 @@ section {
 footer {
     background-color: #202020;
     padding: 20px;
-    margin-bottom: 20px;
+    bottom: 0px;
     text-align: center;
     border-top: 1px solid #10aeec;
 }
@@ -102,9 +105,14 @@ body {
 }
 
 .skill img {
-    width: 60px; /* Ajustez la taille selon vos besoins */
+    width: 60px; /* Ajustez la taille*/
     height: 60px;
     margin-bottom: 10px;
+    transition: .4s ease;
+
+}
+.skill:hover img {
+    transform: scale(1.3) rotate(15deg);
 }
 
 /* FIN  LOGO SKILLS */
@@ -140,10 +148,12 @@ body {
     border-radius: 200px;
     cursor: pointer;
     text-decoration: none;
+    transition: 1s ease;
 }
 
 .download-button:hover {
     background-color: #10aeec;
+    transform: scale(1.2);
 }
 #education {
     padding: 20px;
@@ -223,6 +233,7 @@ body {
     padding: 20px;
     border: 1px solid #10aeec;
     border-radius: 5px;
+    
 }
 
 /* Styling for form groups */
@@ -245,20 +256,68 @@ textarea {
     padding: 8px;
     border: 1px solid #10aeec;
     border-radius: 3px;
-    box-sizing: border-box; /* Include padding and border in width calculation */
+    box-sizing: border-box; 
 }
 
 /* Styling for submit button */
 button[type="submit"] {
-    background-color: #4CAF50; /* Green color */
+    background-color: #10aeec; 
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: 1s ease;
 }
 
 /* Hover effect for submit button */
 button[type="submit"]:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #45a049;
+    transform: scale(1.3);
+}
+
+.poulet-container{
+     
+    display: left;
+    flex-wrap: wrap;
+    justify-content: left;
+
+}
+
+.poulet{
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #10aeec;
+    text-align: left;
+    
+}
+
+.projet-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.projet{
+    text-align: center;
+}
+
+.projet{
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #10aeec;
+    text-align: center;
+}
+
+.projet img {
+    width: 130px; /* Ajustez la taille*/
+    height: 130px;
+    margin-bottom: 10px;
+    transition: .4s ease-in-out;
+}
+
+.projet:hover img {
+    transform: scale(1.3) rotate(15deg);
+
 }
